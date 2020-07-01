@@ -1,0 +1,241 @@
+# server - stores, manage data
+#   - process command
+# client
+# client can connect to the server
+# client vs server in mysql
+# file vs database
+# dbms vs rdbms
+# rdbms - oracle , sql server
+# mysql is open, owned by oracle
+# connection object connects client and server
+#   with user name, server name, database name, password
+
+# python mysql client helps to connect mysql server
+# mysql server is already running
+# mysql -u username -p password
+# mysql -u ai bda ai 
+
+# show dataases;
+# use databases;
+# show tables;
+# select * from xyz;
+# desc xyz;
+# show show create table xyx;
+# select version();
+# show bariables like '%ports%'';
+# drop table;
+# delete from 
+# truncate table
+# insert into
+# create db
+# drop databset
+
+# stored procedures
+# cursers - to access row by row
+
+#  mysql server is listning for the conection in port 3300
+#  port no. for http : ?
+#  port no. for ftp : ?
+#  port no. for telnet : ? 
+
+
+==========================================================================================
+
+# version
+
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai')
+# cur_o = con_o.cursor()
+
+# qsetr="""
+# select version()
+# """
+
+# cur_o.execute(qstr)
+# result = cur_o.fetchone()
+# print(result)
+
+=====================================================================================
+
+# fetchone - one row
+# fetchmany - specified no. of rows
+# fetchall - all rows
+
+============================================================================
+
+# date
+# --------------
+
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai')
+# cur_o = con_o.cursor()
+
+# qstr="""
+# select curdate()
+# """
+
+# cur_o.execute(qstr)
+# result = cur_o.fetchone()
+# print(result)
+
+======================================================================
+
+# date in different format
+# -----------------------------
+
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai')
+# cur_o = con_o.cursor()
+
+# qstr="""
+# select date_format(curdate(), '%d-%b-%Y')
+# """
+
+# cur_o.execute(qstr)
+# result = cur_o.fetchone()
+# print(result)
+
+==========================================================================
+
+# create a table
+# -----------------------------
+
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai')
+# cur_o = con_o.cursor()
+
+# qstr="""
+# create table itm_1(itm_no int, itm_name char(20), itm_price decimal(5, 2), item_stock decimal(6,3), primary key(itm_no))
+# """
+
+# cur_o.execute(qstr)
+# print('Created')
+
+====================================================================
+
+# item key is a candidate key, 
+# it helps to identify rows individually, 
+# it will only accept unique value
+
+=================================================================
+
+# used ai;
+# show tables like 'itm%';
+
+=================================================
+
+# insert data
+# -------------
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai')
+# cur_o = con_o.cursor()
+
+# qstr="""
+# insert into imt_1 values(101, 'apples', 80.50, 500);
+# """
+
+# cur_o.execute(qstr)
+# con_o.commit()
+# print('Data inserted')
+
+=================================================================
+
+# con_o.commit() - when you are changing the data, you have to commit
+# or use autocommit = True, when initializing the connection object
+
+===================================================================
+
+# select data
+# -------------
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai', autocommit=True)
+# cur_o = con_o.cursor()
+
+# qstr="""
+# select * from itm_1;
+# """
+
+# cur_o.execute(qstr)
+# records = cur_o.fetchall()
+# print(records)
+
+===================================================
+
+# select data
+# -------------
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai', autocommit=True)
+# cur_o = con_o.cursor()
+
+# qstr="""
+# select * from itm_1;
+# """
+
+# cur_o.execute(qstr)
+
+# records = cur_o.fetchall()
+
+# print('no of records {}'.format(cur_o.rowcount()))
+# print('column description : {}'.format(cur_o.description()))
+
+# for i in records:
+#   print(i[0], i[1], i[2], i[3])
+
+=========================================================
+
+# print heading
+# -------------
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai', autocommit=True)
+# cur_o = con_o.cursor()
+
+# qstr="""
+# select * from itm_1;
+# """
+
+# cur_o.execute(qstr)
+
+# records = cur_o.fetchall()
+
+# print('no of records {}'.format(cur_o.rowcount()))
+# cd = cur_o.description()
+# print(cd[0][0], cd[1][0], cd[2][0], cd[3][0])
+
+# for i in records:
+#   print(i[0], i[1], i[2], i[3])
+
+=============================================================
+
+# import MySQLdb as my 
+
+# con_o = my.connect('localhost', 'ai', 'ai', 'ai', autocommit=True)
+# cur_o = con_o.cursor(my.cursors.DictCursor)
+
+# qstr="""
+# select * from itm_1;
+# """
+
+# cur_o.execute(qstr)
+
+# records = cur_o.fetchall()
+
+# print('no of records {}'.format(cur_o.rowcount()))
+# cd = cur_o.description()
+# print(cd[0][0], cd[1][0], cd[2][0], cd[3][0])
+
+# for i in records:
+#   print(i[cd[0][0]], i[cd[1][0]], i[cd[2][0]], i[cd[3][0]])
+
+======================================================================
+
+
+
+

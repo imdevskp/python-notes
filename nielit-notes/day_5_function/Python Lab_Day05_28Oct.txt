@@ -1,0 +1,19 @@
+
+1. Write a script to to perform division as per the following.
+
+	a. Get two numbers for divident and divisor values. 
+	b. Define a function div_f with one required parameter namely divident and one default param(with value 2)namely divisor.
+	c. The function should return Quotient and remainder.
+	d. call the function and store the return value in a suitable variable
+	e. print the variable where the retun value is stored.
+
+
+
+2. Write a script to to perform division as per the following.
+
+	a. Get two numbers for divident and divisor values.
+	b. Define a function div_f with two keyword parameters- namely divident and divisor 
+	c. The function should return Quotient and remainder.
+	d. call the function and store the return value in a suitable variable
+	e. print the variable where the retun value is stored.
+

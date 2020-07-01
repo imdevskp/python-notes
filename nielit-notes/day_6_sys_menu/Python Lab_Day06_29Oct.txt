@@ -1,0 +1,43 @@
+1. Write a menu based program that finds the value of a control variable 'con' based on the following equation
+		
+		con = a + 10bc - 5d / e.  
+
+		The variables a,b,c,d and e are stored in a separate file (module).
+		The values of these varables may be modified in the module file while the program is running.
+		The main program should terminate upon receiving 0 as input.
+		
+	options are,
+			
+			1. Initialize
+			2. Show 
+			3. Reload
+			0. Exit
+
+		If option is 1, the module should be imported.
+		If 2, the value of control variable should be displayed.
+		If 3, the module should be reloaded.
+2. Write a  program to create a file to store multiplication table for a number as per the following . 
+	Get the number from user.
+	Using list comprehension create a list  to contain the products.
+	take each item from the list and write the same to a file in the following format
+		
+		1 X <input no> = <first item from list> 
+		2 X <input no> = <second item from list> 		
+		
+		and so on.
+   
+
+3.Modify the above (Q.No.2) to accept filename and number via commandline arguments.
+  (The script should not contain more than 3 lines including #! and import )
+	syntax for giving the command is ,
+    		 scriptname filename number.
+    The multiplication table for the number should  be stored inside filename. 
+
+
+ (hint: to get a formatted string you may use like,
+  >>> x=10
+  >>> y=20
+  >>> s1='value of x is %d and value of y is %d'%(x,y)
+  >>> print s1
+      value of x is 10 and value of y is 20
+  end of hint)	

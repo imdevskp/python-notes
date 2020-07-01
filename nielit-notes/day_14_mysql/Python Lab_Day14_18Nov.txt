@@ -1,0 +1,8 @@
+1. Copy the files items.csv and sales.csv to your folder
+2. write a script that creates two tables namely aixx_items and aixx_sales in the database ai
+	aixx_items - ai01_items,ai02_items etc. as per your username
+	(same for aixx_sales)  
+3. Populate the tables with data from items.csv and sales.csv
+	(hint :file operations followed by insert query may be tried)
+4. Print Item name and balance quantity (By joining the two tables).
+	(hint :inner join /group by etc. may be tried)

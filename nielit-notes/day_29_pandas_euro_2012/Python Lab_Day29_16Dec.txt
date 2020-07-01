@@ -1,0 +1,29 @@
+ 
+ 1. Import the necessary libraries(pandas).
+
+ 2. Import the dataset euro2012 from common folder.
+
+ 3. Assign it to a data frame variable called euro12.
+
+ 4. Select only the Goal column.
+
+ 5. How many team participated in the Euro2012?
+
+ 6. What is the number of columns in the dataset?
+
+ 7. View only the columns Team, Yellow Cards and Red Cards and assign them to a dataframe called discipline
+
+ 8. Sort the teams by Red Cards, then to Yellow Cards
+
+ 9. Calculate the mean Yellow Cards given per Team
+
+ 10. Filter teams that scored more than 6 goals
+
+ 11. Select the teams that start with G
+
+ 12. Select the first 7 columns
+
+ 13. Select all columns except the last 3.
+
+ 14. Present only the Shooting Accuracy from England, Italy and Russia
+ 

@@ -1,0 +1,24 @@
+A Create a numpy structured array using the emp.csv file available in common folder.
+ 	1 display all the records.
+ 	2 display names of officers.
+ 	3 display all the scientists records.
+ 	4 display the total salary.
+ 	5 display average salary of engineers.
+ 	6 display employees in the ascending order of salary.
+ 	7 display employees in the ascending order of designation and then salary.
+ 	8 display the lowest salary for scientist designation.
+ 	9 display records of employees who are scientists and are drawing the lowest salary(without using sort).
+
+B.Write a menu based python script to create a numpy structured array using the given(common folder) emp.csv file
+    with the following options,
+
+	a)initialize b)add new record c)delete a record d)Display details by name e)Display summary f)Save All g)Exit 
+
+        a-Load data from emp.csv to numpy array
+        b-Get details from user and append it to the existing numpy array
+	c-Remove an employee record by receiving employee number
+        d-Display an employee record by receiving ename or employee number
+        e-Display total number of emplyees and total salary
+        f-Replace emp.csv with the modified array
+        g-Quit the program   
+ 

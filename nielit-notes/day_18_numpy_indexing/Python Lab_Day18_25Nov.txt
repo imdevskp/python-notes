@@ -1,0 +1,45 @@
+Open python interpreter and do the following(use numpy module).       
+
+
+	1.Write a function to return the specified rows(of a 2D array) as another array of the same dimension.
+	 (use fancy indexing)
+
+	2.Write a function to return the specified columns(of a 2D array) as another array of the same dimension.
+         (use fancy indexing)
+ 
+	3.Write a function to return diagonal elements of an array(NxN) as another array.
+
+	4.Write a function to return the number of occurences of a given element in a numpy array.
+
+	5.Modify the above function (Q.No.1) to accept array of any shape and to return the 
+ 	    diagonal elements of the highest possible NxN array constructed from the given array. 
+
+	6.Write a numPy program/function to create a 5x5 array to contain multiples of five starting from a given number.
+	
+	7.Write a function to return an nXn array of numbers (1,2,3,etc.) with diagonal elements set to nan.
+
+	8.Write a function to return a numpy array by replacing nan with a given value for a given array.
+
+	9.Write a funtion to add a border (filled with 0's) around an existing array.
+
+	  eg.
+		0000
+		0110
+		0110
+		0000
+
+	10.Write a function to return common values between two arrays as an array.
+
+	11.Write a function to create a 2-D array whose diagonal equals [4, 5, 6, 8] and 0's elsewhere.
+
+	12.Write a function to create a 2-D array whose diagonal equals some given values(variable arguments) and 0's elsewhere.
+
+
+	
+		    
+
+
+
+ 
+
+  	 
